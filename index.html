@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f7f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .pizza-image {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff6f61;
+        }
+
+        label {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 30px);
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin: auto;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e26056;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="pizza-image" src="pizza.png" alt="Pizza">
+        <h2>Pizza Lover's Registration</h2>
+        <form action="process.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>

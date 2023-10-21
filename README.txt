@@ -1,0 +1,22 @@
+HOW TO:
+
+1. OPEN YOUR WAMPSERVER/XAMPP
+
+2. EXECUTE IN SQL TO CREATE DATABASE (IF NO TABLE CREATED)
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    order_date DATE NOT NULL,
+    orders TEXT NOT NULL,
+    cash DECIMAL(10, 2) NOT NULL,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    change_amount DECIMAL(10, 2) NOT NULL
+);
+
+
+3. PLACE THE PIZZA FOLDER INSIDE THE WWW(IF WAMP), HTDOCS(IF XAMPP)
+
+
+Run it in your local as http://localhost/pizza
